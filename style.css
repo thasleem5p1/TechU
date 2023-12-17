@@ -1,0 +1,131 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+#bt1 {
+    background-color: #ffa500;
+    width: 25%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 16px, 0px, 16px, 0px;
+    color: white;
+    border: 2px solid white;
+}
+
+#bt1:hover {
+    cursor: pointer;
+    background-color: rgb(197, 141, 38);
+}
+
+#bt1,
+#bt2 {
+    margin: 10px;
+}
+
+#bt2:hover {
+    cursor: pointer;
+    background-color: rgb(16, 15, 13);
+}
+
+#bt2 {
+    /* background-color: orange; */
+    width: 25%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 16px 0px;
+    background: transparent;
+    color: antiquewhite;
+    border: 2px solid white;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navrt {
+    width: max-content;
+}
+
+#navrt ul {
+    list-style: none;
+    display: flex;
+}
+
+#navrt ul li {
+    cursor: pointer;
+    margin: 0px 30px;
+}
+
+#navrt ul li:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.one img {
+    height: 620px;
+    width: 100%;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#one1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 60%;
+}
+
+#one1 h1 {
+    font-size: 60px;
+}
+
+#one1 h5 {
+    font-size: 20px;
+}
+
+#one1 h3 {
+    font-weight: 100;
+}
+
+
+
+.bar1,
+.bar2,
+.bar3 {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .one img {
+        visibility: hidden;
+    }
+
+    #one1 {
+        color: black;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: block;
+    }
+
+    #navrt ul {
+        display: none;
+    }
+}
